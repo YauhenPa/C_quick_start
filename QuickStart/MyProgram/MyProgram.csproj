@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6803003A-31F3-41EA-BB6A-4940A89BAE67}</ProjectGuid>
+    <ProjectGuid>{E0BE8517-02D6-4E55-87C6-0768D09D6013}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>MyProgram</RootNamespace>
     <AssemblyName>MyProgram</AssemblyName>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SmallBasicLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft\Small Basic\SmallBasicLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
