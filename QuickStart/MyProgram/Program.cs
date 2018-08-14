@@ -5,30 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.SmallBasic.Library;
 
-namespace Lesson_4
+namespace TurleTraining_2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int x = 0;
-            int a = 30;
             Turtle.Speed = 8;
-            Turtle.Move(a);
-
-
-            while (x < 4)
+            int x = 0;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Введите расстояние на которое пойдет черепашка");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            int a = Int32.Parse(Console.ReadLine());
+            while (x < 6)
             {
                 x++;
-                Turtle.TurnRight();
                 Turtle.Move(a);
-                Turtle.TurnRight();
-                Turtle.Move(a);
-
-                Turtle.TurnLeft();
-                Turtle.Move(a);
-                Turtle.TurnLeft();
-                Turtle.Move(a);
+                Turtle.Turn(60);
             }
         }
     }
