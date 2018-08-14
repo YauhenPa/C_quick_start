@@ -12,7 +12,7 @@ namespace Lesson_4
         static void Main(string[] args)
         {
             int x = 0;
-            int a = 30;
+            int a = 50;
             Turtle.Speed = 8;
             Turtle.Move(a);
 
