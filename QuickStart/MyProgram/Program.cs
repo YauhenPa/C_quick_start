@@ -10,6 +10,9 @@ namespace MyProgram
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
     }
 }
